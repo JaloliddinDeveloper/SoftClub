@@ -59,21 +59,35 @@
 
 //Task 2.2: array and bracket
 
-int[] numbers = { -1, 1, -1, -1, 1 };
+//int[] numbers = { -1, 1, -1, -1, 1 };
 
-int p = 1;
+//int p = 1;
 
-foreach (int number in numbers)
+//foreach (int number in numbers)
+//{
+//    p *= number;
+//}
+
+//for(int i = 0; i < numbers.Length; i++)
+//{
+//    Console.Write($"({ numbers[i]})");
+//    if (i != numbers.Length - 1)
+//    {
+//        Console.Write("*");
+//    }
+//}
+//Console.WriteLine("=" + p);
+
+// Task 3: Array Max
+
+int[] numbers = { 4, 6, 7, 8, 0, 3, 11, 25 };
+
+int max = int.MinValue;
+for (int i = 0; i < numbers.Length; i++)
 {
-    p *= number;
-}
-
-for(int i = 0; i < numbers.Length; i++)
-{
-    Console.Write($"({ numbers[i]})");
-    if (i != numbers.Length - 1)
+    if (numbers[i] > max)
     {
-        Console.Write("*");
+        max = numbers[i];
     }
 }
-Console.WriteLine("=" + p);
+Console.WriteLine($"Max: {max}");
