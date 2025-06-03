@@ -78,16 +78,37 @@
 //}
 //Console.WriteLine("=" + p);
 
-// Task 3: Array Max
+//// Task 3: Array Max
 
-int[] numbers = { 4, 6, 7, 8, 0, 3, 11, 25 };
+//int[] numbers = { 4, 6, 7, 8, 0, 3, 11, 25 };
 
-int max = int.MinValue;
+//int max = int.MinValue;
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    if (numbers[i] > max)
+//    {
+//        max = numbers[i];
+//    }
+//}
+//Console.WriteLine($"Max: {max}");
+
+// Task 4: Array no repeat
+// Task 4: Array no repeat
+int[] numbers = { 4, -9, 4, 3, 3, 2 };
+
 for (int i = 0; i < numbers.Length; i++)
 {
-    if (numbers[i] > max)
+    int have = 0;
+    for (int j = 0; j < numbers.Length; j++)
     {
-        max = numbers[i];
+        if (numbers[i] == numbers[j])
+        {
+            have++;
+        }
+    }
+
+    if (have == 1)
+    {
+        Console.Write(numbers[i] + " ");
     }
 }
-Console.WriteLine($"Max: {max}");
