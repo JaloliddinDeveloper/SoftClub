@@ -38,8 +38,29 @@
 //    return amount * interestRate;
 //}
 
-//Task 2: Array
-int[] numbers = { 1, 2, 3, 4, 5 };
+////Task 2: Array
+//int[] numbers = { 1, 2, 3, 4, 5 };
+//int p = 1;
+
+//foreach (int number in numbers)
+//{
+//    p *= number;
+//}
+
+//for(int i = 0; i < numbers.Length; i++)
+//{
+//    Console.Write(numbers[i]);
+//    if (i!=numbers.Length-1)
+//    {
+//        Console.Write("*");
+//    }
+//}
+//Console.WriteLine("="+p);
+
+//Task 2.2: array and bracket
+
+int[] numbers = { -1, 1, -1, -1, 1 };
+
 int p = 1;
 
 foreach (int number in numbers)
@@ -49,10 +70,10 @@ foreach (int number in numbers)
 
 for(int i = 0; i < numbers.Length; i++)
 {
-    Console.Write(numbers[i]);
-    if (i!=numbers.Length-1)
+    Console.Write($"({ numbers[i]})");
+    if (i != numbers.Length - 1)
     {
         Console.Write("*");
     }
 }
-Console.WriteLine("="+p);
+Console.WriteLine("=" + p);
