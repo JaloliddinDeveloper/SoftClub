@@ -272,36 +272,58 @@
 
 //Task 3:
 
-int n = int.Parse(Console.ReadLine());
+//int n = int.Parse(Console.ReadLine());
 
-int minDigit = MinDigit(n);
-int maxDigit = MaxDigit(n);
+//int minDigit = MinDigit(n);
+//int maxDigit = MaxDigit(n);
 
-Console.WriteLine($"{minDigit} + {maxDigit} = {minDigit + maxDigit}");
+//Console.WriteLine($"{minDigit} + {maxDigit} = {minDigit + maxDigit}");
 
-static int MinDigit(int n)
+//static int MinDigit(int n)
+//{
+//    int min = 9;
+//    while (n > 0)
+//    {
+//        int digit = n % 10;
+//        if (digit < min)
+//            min = digit;
+//        n /= 10;
+//    }
+//    return min;
+//}
+
+//static int MaxDigit(int n)
+//{
+//    int max = 0;
+//    while (n > 0)
+//    {
+//        int digit = n % 10;
+//        if (digit > max)
+//            max = digit;
+//        n /= 10;
+//    }
+//    return max;
+//}
+
+// Task 4:
+
+static void Main()
 {
-    int min = 9;
-    while (n > 0)
-    {
-        int digit = n % 10;
-        if (digit < min)
-            min = digit;
-        n /= 10;
-    }
-    return min;
+    int x = int.Parse(Console.ReadLine());
+    int y = int.Parse(Console.ReadLine());
+
+    Console.WriteLine(Pow(x, y));
 }
 
-static int MaxDigit(int n)
+static int Pow(int x, int y)
 {
-    int max = 0;
-    while (n > 0)
+    int result = 1;
+    for (int i = 0; i < y; i++)
     {
-        int digit = n % 10;
-        if (digit > max)
-            max = digit;
-        n /= 10;
+        result *= x;
     }
-    return max;
+    return result;
 }
+
+
 
