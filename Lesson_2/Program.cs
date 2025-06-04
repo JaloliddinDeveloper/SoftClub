@@ -359,21 +359,46 @@
 
 // Task 7:
 
-int[] arr = new int[] { 1, 2, 3 };
-int incrementValue = 5;
+//int[] arr = new int[] { 1, 2, 3 };
+//int incrementValue = 5;
 
-IncrementArrayElements(arr, ref incrementValue);
+//IncrementArrayElements(arr, ref incrementValue);
 
-Console.Write("[");
-Console.Write(string.Join(", ", arr));
-Console.WriteLine("]");
+//Console.Write("[");
+//Console.Write(string.Join(", ", arr));
+//Console.WriteLine("]");
 
-static void IncrementArrayElements(int[] array, ref int value)
+//static void IncrementArrayElements(int[] array, ref int value)
+//{
+//    for (int i = 0; i < array.Length; i++)
+//    {
+//        array[i] += value;
+//    }
+//}
+
+// Task 8:
+
+Console.WriteLine(MinNumber(1, 2, 3, 4));  
+Console.WriteLine(Min(2, 1)); 
+Console.WriteLine(Max(2, 1));  
+
+static int MinNumber(int a, int b, int c, int d)
 {
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] += value;
-    }
+    int min = a;
+    if (b < min) min = b;
+    if (c < min) min = c;
+    if (d < min) min = d;
+    return min;
+}
+
+static int Min(int val1, int val2)
+{
+    return (val1 < val2) ? val1 : val2;
+}
+
+static int Max(int val1, int val2)
+{
+    return (val1 > val2) ? val1 : val2;
 }
 
 
