@@ -306,24 +306,38 @@
 //}
 
 // Task 4:
+//int x = int.Parse(Console.ReadLine());
+//int y = int.Parse(Console.ReadLine());
 
-static void Main()
+//Console.WriteLine(Pow(x, y));
+
+//static int Pow(int x, int y)
+//{
+//    int result = 1;
+//    for (int i = 0; i < y; i++)
+//    {
+//        result *= x;
+//    }
+//    return result;
+//}
+
+
+// Task 5:
+
+int x = 5;
+int y = 10;
+
+Console.WriteLine($"Before swap: x = {x}, y = {y}");
+
+Swap(ref x, ref y);
+
+Console.WriteLine($"After swap: x = {x}, y = {y}");
+
+static void Swap(ref int a, ref int b)
 {
-    int x = int.Parse(Console.ReadLine());
-    int y = int.Parse(Console.ReadLine());
-
-    Console.WriteLine(Pow(x, y));
+    int temp = a;
+    a = b;
+    b = temp;
 }
-
-static int Pow(int x, int y)
-{
-    int result = 1;
-    for (int i = 0; i < y; i++)
-    {
-        result *= x;
-    }
-    return result;
-}
-
 
 
