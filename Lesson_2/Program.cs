@@ -172,62 +172,100 @@
 //Next file tasks
 // Task 1: 
 
-int n = int.Parse(Console.ReadLine());
+//int n = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Even:" + EvenCount(n));
-Console.WriteLine("Odd:" + OddCount(n));
-Console.WriteLine("Digit:" + DigitCount(n));
-Console.WriteLine("Sum:" + SumDigit(n));
+//Console.WriteLine("Even:" + EvenCount(n));
+//Console.WriteLine("Odd:" + OddCount(n));
+//Console.WriteLine("Digit:" + DigitCount(n));
+//Console.WriteLine("Sum:" + SumDigit(n));
 
-static int EvenCount(int n)
+//static int EvenCount(int n)
+//{
+//    int count = 0;
+//    while (n > 0)
+//    {
+//        int digit = n % 10;
+//        if (digit % 2 == 0)
+//        {
+//            count++;
+//        }
+//        n /= 10;
+//    }
+//    return count;
+//}
+
+//static int OddCount(int n)
+//{
+//    int count = 0;
+//    while (n > 0)
+//    {
+//        int digit = n % 10;
+//        if (digit % 2 != 0)
+//        {
+//            count++;
+//        }
+//        n /= 10;
+//    }
+//    return count;
+//}
+
+//static int DigitCount(int n)
+//{
+//    int count = 0;
+//    while (n > 0)
+//    {
+//        count++;
+//        n /= 10;
+//    }
+//    return count;
+//}
+
+//static int SumDigit(int n)
+//{
+//    int sum = 0;
+//    while (n > 0)
+//    {
+//        sum += n % 10;
+//        n /= 10;
+//    }
+//    return sum;
+//}
+
+//Task 2:   
+
+
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Add:" + Add(a, b));
+Console.WriteLine("Subtract:" + Subtract(a, b));
+Console.WriteLine("Multiply:" + Multiply(a, b));
+Console.WriteLine("Division:" + Division(a, b));
+
+static int Add(int a, int b)
 {
-    int count = 0;
-    while (n > 0)
-    {
-        int digit = n % 10;
-        if (digit % 2 == 0)
-        {
-            count++;
-        }
-        n /= 10;
-    }
-    return count;
+    return a + b;
 }
 
-static int OddCount(int n)
+static int Subtract(int a, int b)
 {
-    int count = 0;
-    while (n > 0)
-    {
-        int digit = n % 10;
-        if (digit % 2 != 0)
-        {
-            count++;
-        }
-        n /= 10;
-    }
-    return count;
+    return a - b;
 }
 
-static int DigitCount(int n)
+static int Multiply(int a, int b)
 {
-    int count = 0;
-    while (n > 0)
-    {
-        count++;
-        n /= 10;
-    }
-    return count;
+    return a * b;
 }
 
-static int SumDigit(int n)
+static int Division(int a, int b)
 {
-    int sum = 0;
-    while (n > 0)
+    if (b != 0)
     {
-        sum += n % 10;
-        n /= 10;
+        return a / b;
     }
-    return sum;
+    else
+    {
+        Console.WriteLine("b is not 0");
+        return 0;
+    }
 }
-
