@@ -234,38 +234,74 @@
 //Task 2:   
 
 
-int a = int.Parse(Console.ReadLine());
-int b = int.Parse(Console.ReadLine());
+//int a = int.Parse(Console.ReadLine());
+//int b = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Add:" + Add(a, b));
-Console.WriteLine("Subtract:" + Subtract(a, b));
-Console.WriteLine("Multiply:" + Multiply(a, b));
-Console.WriteLine("Division:" + Division(a, b));
+//Console.WriteLine("Add:" + Add(a, b));
+//Console.WriteLine("Subtract:" + Subtract(a, b));
+//Console.WriteLine("Multiply:" + Multiply(a, b));
+//Console.WriteLine("Division:" + Division(a, b));
 
-static int Add(int a, int b)
+//static int Add(int a, int b)
+//{
+//    return a + b;
+//}
+
+//static int Subtract(int a, int b)
+//{
+//    return a - b;
+//}
+
+//static int Multiply(int a, int b)
+//{
+//    return a * b;
+//}
+
+//static int Division(int a, int b)
+//{
+//    if (b != 0)
+//    {
+//        return a / b;
+//    }
+//    else
+//    {
+//        Console.WriteLine("b is not 0");
+//        return 0;
+//    }
+//}
+
+//Task 3:
+
+int n = int.Parse(Console.ReadLine());
+
+int minDigit = MinDigit(n);
+int maxDigit = MaxDigit(n);
+
+Console.WriteLine($"{minDigit} + {maxDigit} = {minDigit + maxDigit}");
+
+static int MinDigit(int n)
 {
-    return a + b;
-}
-
-static int Subtract(int a, int b)
-{
-    return a - b;
-}
-
-static int Multiply(int a, int b)
-{
-    return a * b;
-}
-
-static int Division(int a, int b)
-{
-    if (b != 0)
+    int min = 9;
+    while (n > 0)
     {
-        return a / b;
+        int digit = n % 10;
+        if (digit < min)
+            min = digit;
+        n /= 10;
     }
-    else
-    {
-        Console.WriteLine("b is not 0");
-        return 0;
-    }
+    return min;
 }
+
+static int MaxDigit(int n)
+{
+    int max = 0;
+    while (n > 0)
+    {
+        int digit = n % 10;
+        if (digit > max)
+            max = digit;
+        n /= 10;
+    }
+    return max;
+}
+
