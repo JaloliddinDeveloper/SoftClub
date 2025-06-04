@@ -342,20 +342,41 @@
 
 // Task 6:
 
-int x = int.Parse(Console.ReadLine());
-Divisors(x);
+//int x = int.Parse(Console.ReadLine());
+//Divisors(x);
 
-static void Divisors(int x)
+//static void Divisors(int x)
+//{
+//    for (int i = 1; i <= x; i++)
+//    {
+//        if (x % i == 0)
+//        {
+//            Console.Write(i + " ");
+//        }
+//    }
+//    Console.WriteLine();
+//}
+
+// Task 7:
+
+int[] arr = new int[] { 1, 2, 3 };
+int incrementValue = 5;
+
+IncrementArrayElements(arr, ref incrementValue);
+
+Console.Write("[");
+Console.Write(string.Join(", ", arr));
+Console.WriteLine("]");
+
+static void IncrementArrayElements(int[] array, ref int value)
 {
-    for (int i = 1; i <= x; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if (x % i == 0)
-        {
-            Console.Write(i + " ");
-        }
+        array[i] += value;
     }
-    Console.WriteLine();
 }
+
+
 
 
 
