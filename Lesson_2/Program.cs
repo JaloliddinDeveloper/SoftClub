@@ -159,12 +159,75 @@
 
 //Task 10: 
 
-int[] numbers = { 2, 3, 1, 5, 4, 9 };
+//int[] numbers = { 2, 3, 1, 5, 4, 9 };
 
-for (int i = 0; i < numbers.Length; i++)
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    if (numbers[i] % 2 != 0)
+//    {
+//        Console.Write(numbers[i] * numbers[i] + " ");
+//    }
+//}
+
+//Next file tasks
+// Task 1: 
+
+int n = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Even:" + EvenCount(n));
+Console.WriteLine("Odd:" + OddCount(n));
+Console.WriteLine("Digit:" + DigitCount(n));
+Console.WriteLine("Sum:" + SumDigit(n));
+
+static int EvenCount(int n)
 {
-    if (numbers[i] % 2 != 0)
+    int count = 0;
+    while (n > 0)
     {
-        Console.Write(numbers[i] * numbers[i] + " ");
+        int digit = n % 10;
+        if (digit % 2 == 0)
+        {
+            count++;
+        }
+        n /= 10;
     }
+    return count;
 }
+
+static int OddCount(int n)
+{
+    int count = 0;
+    while (n > 0)
+    {
+        int digit = n % 10;
+        if (digit % 2 != 0)
+        {
+            count++;
+        }
+        n /= 10;
+    }
+    return count;
+}
+
+static int DigitCount(int n)
+{
+    int count = 0;
+    while (n > 0)
+    {
+        count++;
+        n /= 10;
+    }
+    return count;
+}
+
+static int SumDigit(int n)
+{
+    int sum = 0;
+    while (n > 0)
+    {
+        sum += n % 10;
+        n /= 10;
+    }
+    return sum;
+}
+
