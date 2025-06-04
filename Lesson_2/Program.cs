@@ -146,13 +146,25 @@
 
 // Task 9: 
 
+//int[] numbers = { 2, 3, 1, 5, 4, 9 };
+//int a=int.Parse(Console.ReadLine());
+//int b=int.Parse(Console.ReadLine());
+//for (int i = a; i <= b; i++)
+//{
+//    if (numbers[i] % 2 != 0)
+//    {
+//        Console.WriteLine(numbers[i]);
+//    }
+//}
+
+//Task 10: 
+
 int[] numbers = { 2, 3, 1, 5, 4, 9 };
-int a=int.Parse(Console.ReadLine());
-int b=int.Parse(Console.ReadLine());
-for (int i = a; i <= b; i++)
+
+for (int i = 0; i < numbers.Length; i++)
 {
     if (numbers[i] % 2 != 0)
     {
-        Console.WriteLine(numbers[i]);
+        Console.Write(numbers[i] * numbers[i] + " ");
     }
 }
