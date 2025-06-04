@@ -324,20 +324,39 @@
 
 // Task 5:
 
-int x = 5;
-int y = 10;
+//int x = 5;
+//int y = 10;
 
-Console.WriteLine($"Before swap: x = {x}, y = {y}");
+//Console.WriteLine($"Before swap: x = {x}, y = {y}");
 
-Swap(ref x, ref y);
+//Swap(ref x, ref y);
 
-Console.WriteLine($"After swap: x = {x}, y = {y}");
+//Console.WriteLine($"After swap: x = {x}, y = {y}");
 
-static void Swap(ref int a, ref int b)
+//static void Swap(ref int a, ref int b)
+//{
+//    int temp = a;
+//    a = b;
+//    b = temp;
+//}
+
+// Task 6:
+
+int x = int.Parse(Console.ReadLine());
+Divisors(x);
+
+static void Divisors(int x)
 {
-    int temp = a;
-    a = b;
-    b = temp;
+    for (int i = 1; i <= x; i++)
+    {
+        if (x % i == 0)
+        {
+            Console.Write(i + " ");
+        }
+    }
+    Console.WriteLine();
 }
+
+
 
 
