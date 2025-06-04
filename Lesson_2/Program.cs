@@ -115,7 +115,20 @@
 
 //Task 5:min index
 
-int[] numbers = { 4, -9, 4, 3, 3, 2 };
-int minIndex = 0;
-Console.WriteLine(minIndex);
+//int[] numbers = { 4, -9, 4, 3, 3, 2 };
+//int minIndex = 0;
+//Console.WriteLine(minIndex);
+
+//Task 6: Array max neighbours
+
+int[] numbers = { 2, 3, 1, 5, 4 };
+int s = 0;
+for (int i = 1; i <numbers.Length; i++)
+{
+    if(numbers[i-1] < numbers[i] && numbers[i] > numbers[i+1])
+    {
+        s++;
+    }
+}
+Console.WriteLine(s);
 
