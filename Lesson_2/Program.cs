@@ -121,14 +121,25 @@
 
 //Task 6: Array max neighbours
 
-int[] numbers = { 2, 3, 1, 5, 4 };
+//int[] numbers = { 2, 3, 1, 5, 4 };
+//int s = 0;
+//for (int i = 1; i <numbers.Length; i++)
+//{
+//    if(numbers[i-1] < numbers[i] && numbers[i] > numbers[i+1])
+//    {
+//        s++;
+//    }
+//}
+//Console.WriteLine(s);
+
+// Task 7: Array min Odd element index
+int[] numbers = { 2, 3, 1, 5, 4 ,9};
 int s = 0;
-for (int i = 1; i <numbers.Length; i++)
+for (int i = 0; i < numbers.Length; i++)
 {
-    if(numbers[i-1] < numbers[i] && numbers[i] > numbers[i+1])
+    if (numbers[i] % 2 == 0)
     {
-        s++;
+        Console.WriteLine(i);
     }
 }
 Console.WriteLine(s);
-
