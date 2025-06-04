@@ -376,7 +376,7 @@
 //    }
 //}
 
-// Task 8:
+// Task 8,9,10:
 
 Console.WriteLine(MinNumber(1, 2, 3, 4));  
 Console.WriteLine(Min(2, 1)); 
@@ -400,6 +400,8 @@ static int Max(int val1, int val2)
 {
     return (val1 > val2) ? val1 : val2;
 }
+
+
 
 
 
