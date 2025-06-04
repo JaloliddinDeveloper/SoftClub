@@ -94,21 +94,28 @@
 
 // Task 4: Array no repeat
 // Task 4: Array no repeat
+//int[] numbers = { 4, -9, 4, 3, 3, 2 };
+
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    int have = 0;
+//    for (int j = 0; j < numbers.Length; j++)
+//    {
+//        if (numbers[i] == numbers[j])
+//        {
+//            have++;
+//        }
+//    }
+
+//    if (have == 1)
+//    {
+//        Console.Write(numbers[i] + " ");
+//    }
+//}
+
+//Task 5:min index
+
 int[] numbers = { 4, -9, 4, 3, 3, 2 };
+int minIndex = 0;
+Console.WriteLine(minIndex);
 
-for (int i = 0; i < numbers.Length; i++)
-{
-    int have = 0;
-    for (int j = 0; j < numbers.Length; j++)
-    {
-        if (numbers[i] == numbers[j])
-        {
-            have++;
-        }
-    }
-
-    if (have == 1)
-    {
-        Console.Write(numbers[i] + " ");
-    }
-}
