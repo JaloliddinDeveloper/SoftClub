@@ -132,14 +132,27 @@
 //}
 //Console.WriteLine(s);
 
-// Task 7: Array min Odd element index
-int[] numbers = { 2, 3, 1, 5, 4 ,9};
-int s = 0;
-for (int i = 0; i < numbers.Length; i++)
+// Task 8: Array Odd element index
+//int[] numbers = { 2, 3, 1, 5, 4 ,9};
+//int s = 0;
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    if (numbers[i] % 2 == 0)
+//    {
+//        Console.WriteLine(i);
+//    }
+//}
+//Console.WriteLine(s);
+
+// Task 9: 
+
+int[] numbers = { 2, 3, 1, 5, 4, 9 };
+int a=int.Parse(Console.ReadLine());
+int b=int.Parse(Console.ReadLine());
+for (int i = a; i <= b; i++)
 {
-    if (numbers[i] % 2 == 0)
+    if (numbers[i] % 2 != 0)
     {
-        Console.WriteLine(i);
+        Console.WriteLine(numbers[i]);
     }
 }
-Console.WriteLine(s);
