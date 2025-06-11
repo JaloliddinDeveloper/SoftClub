@@ -40,39 +40,57 @@ namespace PersonDemo
 
             //Task 3    
 
-            Student[] students = new Student[]
-            {
-                new Student { Name = "Alice",   GradeLevel = 9,  Scores = new int[] { 92, 87, 85, 90 } },
-                new Student { Name = "Bob",     GradeLevel = 11, Scores = new int[] { 68, 72, 70, 65 } },
-                new Student { Name = "Catherine",GradeLevel = 10, Scores = new int[] { 78, 82, 80, 75 } },
-                new Student { Name = "Daniel",  GradeLevel = 8,  Scores = new int[] { 88, 90, 85, 92 } },
-                new Student { Name = "Emma",    GradeLevel = 12, Scores = new int[] { 60, 55, 58, 62 } }
-            };
+            //Student[] students = new Student[]
+            //{
+            //    new Student { Name = "Alice",   GradeLevel = 9,  Scores = new int[] { 92, 87, 85, 90 } },
+            //    new Student { Name = "Bob",     GradeLevel = 11, Scores = new int[] { 68, 72, 70, 65 } },
+            //    new Student { Name = "Catherine",GradeLevel = 10, Scores = new int[] { 78, 82, 80, 75 } },
+            //    new Student { Name = "Daniel",  GradeLevel = 8,  Scores = new int[] { 88, 90, 85, 92 } },
+            //    new Student { Name = "Emma",    GradeLevel = 12, Scores = new int[] { 60, 55, 58, 62 } }
+            //};
 
-            foreach (var student in students)
-            {
-                double avg = student.GetAverage();
-                Console.WriteLine($"Student: {student.Name} (Grade {student.GradeLevel})");
-                Console.WriteLine($"Average Score: {avg:F1}");
+            //foreach (var student in students)
+            //{
+            //    double avg = student.GetAverage();
+            //    Console.WriteLine($"Student: {student.Name} (Grade {student.GradeLevel})");
+            //    Console.WriteLine($"Average Score: {avg:F1}");
 
-                if (avg > 85)
-                {
-                    Console.WriteLine("🌟 Excellent work! Keep it up!");
-                }
-                else if (avg < 70)
-                {
-                    Console.WriteLine("🤝 Don’t be discouraged—consider extra help and keep practicing.");
-                }
-                else  
-                {
-                    Console.WriteLine("👍 Good job! Keep striving to improve!");
-                }
+            //    if (avg > 85)
+            //    {
+            //        Console.WriteLine("🌟 Excellent work! Keep it up!");
+            //    }
+            //    else if (avg < 70)
+            //    {
+            //        Console.WriteLine("🤝 Don’t be discouraged—consider extra help and keep practicing.");
+            //    }
+            //    else  
+            //    {
+            //        Console.WriteLine("👍 Good job! Keep striving to improve!");
+            //    }
 
-                Console.WriteLine(new string('-', 40));
-            }
+            //    Console.WriteLine(new string('-', 40));
+            //}
+
+
+            //Task 4
+
+
+            Car myCar = new Car("Chevrolet", "Monza", 2024);
+
+            myCar.Drive(10);
+
+            myCar.AddFuel(15);
+
+            myCar.Drive(100);
+
+            myCar.AddFuel(90);
+
+            myCar.Drive(100);
         }
     }
 }
+    
+
     
 
 
