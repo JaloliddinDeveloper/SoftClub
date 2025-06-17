@@ -45,7 +45,3 @@ Bu loyiha C# dasturlash tilida `List<T>` kolleksiyasini ishlatgan holda bajarilg
 ### ✅ Task 10 - Tasodifiy sonlar bilan list to‘ldirish
 - `List<int>` 10 ta `1` dan `100` gacha bo‘lgan random sonlar bilan to‘ldiriladi.
 
----
-
-## 📁 Fayl tarkibi
-
