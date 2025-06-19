@@ -52,17 +52,4 @@ Bu repository C# dasturlash tilida **obyektga yo‘naltirilgan dasturlash (OOP)*
 - `NumberOfWagons` – vagonlar soni
 
 ---
-
-## 💻 Koddan misollar
-
-```csharp
-PassengerCar yengilAvtomobil = new PassengerCar("Toyota", 180, 5, 5);
-yengilAvtomobil.DisplayInfo();
-
-CargoPlane yukSamolyoti = new CargoPlane("Antonov AN-124", 750, 6, 120000);
-yukSamolyoti.DisplayInfo();
-
-Train tezyurarPoyezd = new Train("Tezyurar Poyezd", 300, 600, 16);
-tezyurarPoyezd.DisplayInfo();
-
- ![Homework2](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic2.jpg)
+ ![Homework](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic2.jpg)
