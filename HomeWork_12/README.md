@@ -64,4 +64,4 @@ yukSamolyoti.DisplayInfo();
 Train tezyurarPoyezd = new Train("Tezyurar Poyezd", 300, 600, 16);
 tezyurarPoyezd.DisplayInfo();
 
- ![Homework](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic2.jpg)
+ ![Homework2](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic2.jpg)
