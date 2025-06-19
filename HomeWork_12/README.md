@@ -17,6 +17,7 @@ Bu repository C# dasturlash tilida **obyektga yo‘naltirilgan dasturlash (OOP)*
 
 
  ![Homework](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic1.jpg)
+  ![Homework](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic2.jpg)
 
 ## 🔧 Asosiy sinf: `Transport`
 
