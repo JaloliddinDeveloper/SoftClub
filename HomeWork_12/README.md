@@ -15,10 +15,53 @@ Bu repository C# dasturlash tilida **obyektga yo‘naltirilgan dasturlash (OOP)*
 - `Laptop`: batteryLife, Charge()
 - `SmartPhone`: cameraResolution, TakePhoto()
 
-### 💻 Misol:
+
+ ![Homework](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic1.jpg)
+
+## 🔧 Asosiy sinf: `Transport`
+
+### Umumiy xususiyatlar:
+- `Name` – transport nomi
+- `Speed` – tezlik (km/soat)
+- `Capacity` – sig‘imi (yo‘lovchilar yoki yuk)
+
+### Metod:
+- `DisplayInfo()` – transport haqida ma’lumot chiqaradi
+
+---
+
+## 🚗 `Car` sinfi
+
+### Voris sinflari:
+- **`PassengerCar`** – `NumberOfSeats` (o‘rindiqlar soni)
+- **`CargoCar`** – `LoadCapacity` (yuk sig‘imi, kg)
+
+---
+
+## ✈️ `Airplane` sinfi
+
+### Voris sinflari:
+- **`PassengerPlane`** – `FlightRange` (uchish masofasi, km)
+- **`CargoPlane`** – `MaxCargoWeight` (maksimal yuk, kg)
+
+---
+
+## 🚄 `Train` sinfi
+
+- `NumberOfWagons` – vagonlar soni
+
+---
+
+## 💻 Koddan misollar
+
 ```csharp
-Laptop laptop = new Laptop("Dell", "Intel i7", 16, 8);
-laptop.DisplayInfo();
-laptop.Charge();
- ![Homework](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic1.jpg)
- ![Homework](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic1.jpg)
+PassengerCar yengilAvtomobil = new PassengerCar("Toyota", 180, 5, 5);
+yengilAvtomobil.DisplayInfo();
+
+CargoPlane yukSamolyoti = new CargoPlane("Antonov AN-124", 750, 6, 120000);
+yukSamolyoti.DisplayInfo();
+
+Train tezyurarPoyezd = new Train("Tezyurar Poyezd", 300, 600, 16);
+tezyurarPoyezd.DisplayInfo();
+
+ ![Homework](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/inpic2.jpg)
