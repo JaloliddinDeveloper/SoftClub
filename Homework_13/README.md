@@ -13,4 +13,4 @@ This repository contains three object-oriented programming tasks implemented in 
 - `Teacher` class includes an `Explain()` method.
 - Store 2 students and 1 teacher in an array, call their respective methods.
 
-### 💡 Sample Output:
+Picture[https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/pic131.jpg]
