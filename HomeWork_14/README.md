@@ -10,7 +10,7 @@ This project demonstrates object-oriented programming concepts in C# by modeling
 
 Represents a general person with common properties.
 
-[Picture](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/pic141.jpg)
+![Screenshot](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/pic141.jpg?raw=true)
 
 # 🐦 BirdCount Project
 
@@ -27,7 +27,8 @@ You can perform actions such as retrieving last week's data and calculating the 
 
 ---
 
-[Picture](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/pic142.jpg)
-[Picture](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/pic143.jpg)
+![Screenshot](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/pic142.jpg?raw=true)
+![Screenshot](https://github.com/JaloliddinDeveloper/SoftClub/blob/main/HomeWork_10/Pictures/pic143.jpg?raw=true)
+
 
 
