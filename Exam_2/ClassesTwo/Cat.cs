@@ -7,8 +7,6 @@
             : base(name)
         { }
 
-
-
         public override void Greet()
         {
             Console.WriteLine("Meow");
