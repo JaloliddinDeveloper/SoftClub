@@ -11,7 +11,6 @@
 
         public List<Book> Books { get; set; }
 
-
         List<Book> books = new List<Book>();
         public void AddBook(Book book)
         {
@@ -46,7 +45,7 @@
             }
         }
 
-        public List<Book> SearchingBook(string name)=>
-             books.FindAll(a=>a.BookName == name);   
+        public List<Book> SearchingBook(string liky)=>
+             books.FindAll(a=>a.BookName == liky);   
     }
 }
