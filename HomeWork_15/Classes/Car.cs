@@ -2,7 +2,7 @@
 {
     internal class Car
     {
-        private int gasoline;
+        private decimal gasoline;
 
         public Car(int initialGasoline)
         {
@@ -21,7 +21,7 @@
             }
         }
 
-        public bool Refuel(int amount)
+        public bool Refuel(decimal amount)
         {
             gasoline += amount;
             return true;
