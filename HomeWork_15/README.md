@@ -3,7 +3,7 @@
 This project demonstrates how to implement an `IVehicle` interface in C# with two methods: `Drive` and `Refuel`. A `Car` class is created to implement this interface.
 
 ## 🧩 Features
-- Interface with `Drive()` and `Refuel(int amount)` methods
+- Interface with `Drive()` and `Refuel(decimal amount)` methods
 - `Car` class implements the interface
 - User input for refueling
 - Displays message if the car can drive
